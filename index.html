@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ótica Baiana — óculos de grau, sol e lentes no Shopping Piedade</title>
+<meta name="description" content="Óculos de grau, sol e lentes de contato. Armações exclusivas e variadas no Shopping Piedade, piso L2, Salvador.">
+<link rel="icon" href="fotos/perfil.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118181914">
+</head>
+<body>
+<div class="faixa-beta">Site de demonstração · produtos e preços de exemplo</div>
+<header class="topo"><div class="wrap">
+  <a class="marca" href="#"><img src="fotos/perfil.jpg" alt="Logo Ótica Baiana"><b>ÓTICA BAIANA</b></a>
+  <nav class="menu"><a href="#vitrine">Vitrine</a><a href="#exame">Exame de vista</a><a href="#receita">Enviar receita</a><a href="#unidade">Onde estamos</a></nav>
+  <a class="btn mini" href="#exame">Agendar exame</a>
+</div></header>
+
+<section class="hero" style="padding:0"><div class="wrap">
+  <div>
+    <div class="kicker" style="color:var(--ouro)">Shopping Piedade · Centro de Salvador</div>
+    <h1>Enxergue bem.<br><em>Saia com estilo.</em></h1>
+    <p>Óculos de grau, sol e lentes de contato. Armações exclusivas e variadas, com atendimento no piso L2 do Shopping Piedade.</p>
+    <div class="acoes">
+      <a class="btn" href="#vitrine">Ver armações</a>
+      <a class="btn linha" style="color:#fff" href="#receita">Enviar minha receita</a>
+    </div>
+    <div class="selos"><span class="selo">Grau</span><span class="selo">Sol</span><span class="selo">Lentes de contato</span><span class="selo">Ajuste e manutenção</span></div>
+  </div>
+  <div class="hero-foto">
+    <img src="fotos/07.jpg" alt="Fachada da Ótica Baiana no Shopping Piedade">
+    <div class="tag"><b>Piso L2</b>ao lado do balcão da Amávia</div>
+  </div>
+</div></section>
+
+<section id="vitrine"><div class="wrap">
+  <div class="cab">
+    <div><div class="kicker">Vitrine</div><h2>Escolha a sua armação</h2></div>
+    <p>Gostou de um modelo? Reserve pelo WhatsApp e ele fica separado para você provar na loja.</p>
+  </div>
+  <div class="filtros" id="f-cat"></div>
+  <div class="filtros" id="f-estilo"></div>
+  <div class="grade" id="grade"></div>
+  <p class="aviso">Fotos reais da loja. Modelos, estilos e valores ilustrativos até a ótica cadastrar o catálogo. Preço sob consulta.</p>
+</div></section>
+
+<section class="escuro" id="exame"><div class="wrap duas">
+  <div>
+    <div class="kicker">Exame de vista</div>
+    <h2>Agende seu exame sem fila</h2>
+    <p style="color:#cfc7b3">Escolha o dia e o horário. A gente confirma pelo WhatsApp e você já sai sabendo o grau certo para escolher a armação.</p>
+    <ul class="lista-ok">
+      <li><span class="num">1</span><span><b>Escolha o horário</b><br>Leva menos de um minuto.</span></li>
+      <li><span class="num">2</span><span><b>Confirmação no WhatsApp</b><br>A loja responde e confirma.</span></li>
+      <li><span class="num">3</span><span><b>Lembrete do retorno</b><br>Avisamos quando a receita estiver perto de vencer.</span></li>
+    </ul>
+  </div>
+  <form class="painel-form" id="form-exame">
+    <h3>Marcar exame</h3>
+    <div class="campo"><label for="ex-nome">Seu nome</label><input id="ex-nome" required autocomplete="name"></div>
+    <div class="linha2">
+      <div class="campo"><label for="ex-tel">WhatsApp</label><input id="ex-tel" required inputmode="tel" placeholder="(71) 9...."></div>
+      <div class="campo"><label for="ex-data">Dia</label><input id="ex-data" type="date" required></div>
+    </div>
+    <div class="campo"><label>Horário</label><div class="horas" id="horas"></div></div>
+    <div class="campo"><label for="ex-obs">Observação (opcional)</label><input id="ex-obs" placeholder="Ex.: uso lente de contato"></div>
+    <button class="btn" style="width:100%">Pedir agendamento pelo WhatsApp</button>
+    <div class="ok-msg" id="ex-ok" hidden>Pedido enviado! Abrimos o WhatsApp da loja para confirmar.</div>
+  </form>
+</div></section>
+
+<section class="claro" id="receita"><div class="wrap duas">
+  <div>
+    <div class="kicker">Já tem receita?</div>
+    <h2>Mande a foto da receita e receba o orçamento</h2>
+    <p style="color:var(--suave)">Tire uma foto da receita do oftalmologista. A loja vê o grau, indica as lentes certas e responde com as opções para a sua armação.</p>
+    <img src="fotos/11.jpg" alt="Ajuste de óculos na Ótica Baiana" style="border-radius:16px;margin-top:18px;max-height:320px;object-fit:cover;width:100%">
+  </div>
+  <form class="painel-form" id="form-receita">
+    <h3>Enviar receita</h3>
+    <label class="drop" id="drop" for="rc-foto">
+      <img id="rc-prev" alt="" hidden>
+      <b>Toque para fotografar ou escolher a receita</b><br><small style="color:var(--suave)">JPG ou PNG</small>
+    </label>
+    <input type="file" id="rc-foto" accept="image/*" capture="environment" hidden>
+    <div class="linha2" style="margin-top:14px">
+      <div class="campo"><label for="rc-nome">Seu nome</label><input id="rc-nome" required></div>
+      <div class="campo"><label for="rc-tel">WhatsApp</label><input id="rc-tel" required inputmode="tel"></div>
+    </div>
+    <div class="campo"><label for="rc-tipo">Quero orçamento de</label>
+      <select id="rc-tipo"><option>Lentes para óculos de grau</option><option>Óculos completo (armação + lentes)</option><option>Multifocal</option><option>Lentes de contato</option><option>Óculos de sol com grau</option></select></div>
+    <button class="btn esc" style="width:100%">Enviar receita</button>
+    <div class="ok-msg" id="rc-ok" hidden>Receita recebida! No WhatsApp que abriu, anexe a mesma foto para a loja responder.</div>
+  </form>
+</div></section>
+
+<section id="unidade" style="padding-top:0"><div class="wrap">
+  <div class="cab"><div><div class="kicker">Onde estamos</div><h2>Nossa loja</h2></div></div>
+  <div id="unidades"></div>
+  <div class="fotos-ig">
+    <img src="fotos/04.jpg" alt="Shopping Piedade"><img src="fotos/02.jpg" alt="Parede de óculos de sol">
+    <img src="fotos/06.jpg" alt="Cliente com armação oversized"><img src="fotos/08.jpg" alt="Cliente com óculos de sol">
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><b>Ótica Baiana</b><br>Shopping Piedade, piso L2 · Salvador - BA</div>
+  <div><a href="https://www.instagram.com/oticabaianaoficial/" target="_blank" rel="noopener">@oticabaianaoficial</a><br><a href="admin.html">Área da loja</a></div>
+  <div style="opacity:.7">Demonstração feita por Zync Hub</div>
+</div></footer>
+<a class="btn zap zap-fixo" id="zap-fixo" target="_blank" rel="noopener">WhatsApp</a>
+
+<script src="assets/config.js?v=20261118181914"></script>
+<script src="assets/site.js?v=20261118181914"></script>
+</body>
+</html>

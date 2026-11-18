@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Painel — Ótica Baiana</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="fotos/perfil.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Manrope:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118181914">
+<style>[hidden]{display:none!important}</style>
+</head>
+<body class="adm">
+<div class="faixa-beta">Painel de demonstração · dados de exemplo marcados como "exemplo"</div>
+<header class="topo"><div class="wrap">
+  <a class="marca" href="index.html"><img src="fotos/perfil.jpg" alt=""><b>ÓTICA BAIANA</b></a>
+  <span style="margin-left:auto;display:flex;gap:10px">
+    <a class="btn linha mini" style="color:#fff" href="index.html">Ver o site</a>
+    <button class="btn mini" id="sair" hidden>Sair</button>
+  </span>
+</div></header>
+
+<div class="login" id="tela-login">
+  <form id="form-login" autocomplete="off">
+    <h2 style="font-size:32px">Área da loja</h2>
+    <p class="dica">Acesso da demonstração: usuário <b>gerente</b> e senha <b>oticabaiana</b>.</p>
+    <p class="erro" id="login-erro" hidden>Usuário ou senha incorretos.</p>
+    <div class="campo"><label for="lg-user">Usuário</label><input id="lg-user" name="usuario" required></div>
+    <div class="campo"><label for="lg-senha">Senha</label><input id="lg-senha" name="senha" type="password" required></div>
+    <button class="btn esc" style="width:100%" type="submit">Entrar</button>
+  </form>
+</div>
+
+<main class="wrap" id="painel" hidden>
+  <nav class="abas" id="abas"></nav>
+  <div id="conteudo" style="padding-bottom:60px"></div>
+</main>
+
+<script src="assets/config.js?v=20261118181914"></script>
+<script src="assets/admin.js?v=20261118181914"></script>
+</body>
+</html>
